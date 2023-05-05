@@ -1,1 +1,9 @@
-<p>products-list works!</p>
+<div *ngFor="let item of livros">
+    <h1>name: {{item.name}}</h1>
+    <h2> description: {{item.description}}
+    </h2>
+    <h2> {{item.valor | currency: 'R$'}}
+
+    </h2>  
+      <h2>{{item.imagem}}</h2>
+</div>
