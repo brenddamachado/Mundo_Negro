@@ -1,10 +1,42 @@
-li {
-    list-style: none;
-    cursor: pointer;
-    height: 25px;
-}
-ul {
+.cabecalho {
+    
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #D9CB04;
     display: flex;
+    align-items: center;
+    color: white;
     width: 100%;
-    gap: 5px;
+
+    .logo {
+        width: 100%;
+    }
+
+    .nav {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        li {
+            list-style: none;
+            cursor: pointer;
+            height: 25px;
+            color: white;
+            text-decoration: none;
+            margin-right: 100px;
+            font-size: 20px;
+        }
+
+        ul {
+            display: flex;
+            width: 100%;
+         
+            gap: 20px;
+        justify-content: flex-end;
+  
+        }
+    }
+
 }
+

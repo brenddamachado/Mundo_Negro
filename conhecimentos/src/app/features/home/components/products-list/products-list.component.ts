@@ -12,7 +12,7 @@ export class ProductsListComponent {
       id:1,
       name:"fff",
       description:"fff",
-      imagem:" https://pbs.twimg.com/media/FvYd_c_WcAIMPJJ?format=jpg&name=medium",
+      imagem:"https://mundonegro.inf.br/wp-content/uploads/2022/03/Copia-de-MNDO-NEGRO-3.png",
       valor:4444
     }
   ];
