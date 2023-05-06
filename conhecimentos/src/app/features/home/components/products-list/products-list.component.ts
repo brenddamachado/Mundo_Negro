@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { ProductsService } from '../../../../shared/services/products.service';
 import { Component, NgModule } from '@angular/core';
 import { livro } from '../../models/product.model';
@@ -8,7 +9,13 @@ import { livro } from '../../models/product.model';
 })
 export class ProductsListComponent {
 
-  livros: Array<livro> = this.ProductsService.getProducts();
+  livros: Array<livro> = this.productsService.getProducts();
 
-  constructor (private ProductsService: ProductsService ) {}
+  constructor (private productsService: ProductsService,
+    private router: Router ) {}
+
+    detalhesProduto(idlivro: number) {
+      this.router.navigateByUrl
+      (`product-datails/${idlivro}`);
+    }
 }
