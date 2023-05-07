@@ -4,10 +4,10 @@
     right: 0;
     font-family: Arial, Helvetica, sans-serif;
     /* altura do footer */
-    background-color:  #D9CB04;
+    background-color: black;
     width: 100%;
     bottom: 0;
-    height: 50px;
+    height: 100px;
     
   }
   
@@ -23,16 +23,4 @@
   }
   
 
-
-@media only screen and (max-width: 480px) {
-  .footer-container {
-    height: auto;
-    position: relative;
-  }
-  
-  .footer-content p {
-    font-size: 13px;
-    margin-top: 20px;
-  }
-}
 
