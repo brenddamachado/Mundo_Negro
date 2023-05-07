@@ -5,7 +5,7 @@
     <!--FORMULÁRIO DE LOGIN-->
     <div id="login">
         <form method="post" action="">
-            <h1> Digite seu usuário/senha para acessar o sistema!</h1>
+            <h1> Acessar Mundo Negro</h1>
             <p>
                 <label for="nome_login">E-mail</label>
                 <input id="nome_login" name="nome_login" required="required" type="text"
@@ -29,8 +29,12 @@
 
             <p class="link">
                 Ainda não tem conta?
-                <a href="#paracadastro">Cadastre-se</a>
+                <a (click)="navigateByUrl('cadastro')">Cadastre-se</a>
             </p>
+
+
         </form>
     </div>
 </div>
+
+<app-footer/>

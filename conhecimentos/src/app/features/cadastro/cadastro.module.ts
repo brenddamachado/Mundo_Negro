@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
@@ -9,7 +10,13 @@ import { CadastroComponent } from './pages/cadastro/cadastro.component';
     CadastroComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
+    
+  
+  ],
+  exports:[
+    CadastroComponent
   ]
 })
 export class CadastroModule { }
