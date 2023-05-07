@@ -1,18 +1,36 @@
 <app-header></app-header>
-    <div class="login-container">
-        <h3>Bem vindo! Digite seu usuário/senha para acessar o sistema!</h3>
-        <form class="login-form">
-            <div class="form-field">
-                <input type="email"  placeholder="Digite o Email" name="email" required>
-            </div>
-            <div class="form-field">
-                <input type="password"  placeholder="Digite a senha" name="password" required>
-            </div>
-            <p class="error" >Usuário/senha inválidos, tente novamente!</p>
+
+
+<div class="content">
+    <!--FORMULÁRIO DE LOGIN-->
+    <div id="login">
+        <form method="post" action="">
+            <h1> Digite seu usuário/senha para acessar o sistema!</h1>
+            <p>
+                <label for="nome_login">E-mail</label>
+                <input id="nome_login" name="nome_login" required="required" type="text"
+                    placeholder="ex. contato@gmail.com" />
+            </p>
+
+            <p>
+                <label for="email_login">Senha</label>
+                <input id="email_login" name="email_login" required="required" type="password"
+                    placeholder="ex. senha" />
+            </p>
+
+            <p>
+                <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+                <label for="manterlogado">Manter-me logado</label>
+            </p>
+
+            <p>
+                <input type="submit" value="Logar" />
+            </p>
+
+            <p class="link">
+                Ainda não tem conta?
+                <a href="#paracadastro">Cadastre-se</a>
+            </p>
         </form>
-        <button
-            class="primary-button"
-            type="button"
-            >Entrar</button>
     </div>
-    
+</div>
