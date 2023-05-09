@@ -7,6 +7,12 @@ import { Router } from '@angular/router';
 })
 
 export class CadastroComponent {
+
+  recado(){
+    
+    alert('oi')
+  }
+
   constructor(private router: Router){} 
   
   navigateByUrl(url:string){

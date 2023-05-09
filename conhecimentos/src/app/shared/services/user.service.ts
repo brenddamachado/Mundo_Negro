@@ -35,4 +35,12 @@ export class UserService {
 ]
 
   constructor() { }
+
+  getUsers(){
+    return this.users;
+  }
+
+  getUserByEmailAndPassword(email: string, password: string){
+    return this.users.find((user) => user.email === email && user.senha === password);
+  }
 }

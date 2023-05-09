@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './pages/login/login.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { CadastroModule } from '../cadastro/cadastro.module';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -13,7 +14,8 @@ import { CadastroModule } from '../cadastro/cadastro.module';
   imports: [
     CommonModule,
     SharedModule, 
-    CadastroModule
+    CadastroModule,
+    FormsModule
   ],
   exports: [
     LoginComponent

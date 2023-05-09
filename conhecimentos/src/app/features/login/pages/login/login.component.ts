@@ -1,3 +1,4 @@
+import { UserService } from './../../../../shared/services/user.service';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -6,10 +7,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  constructor(private router: Router){} 
+  constructor(private router: Router,
+   private userService: UserService ){} 
   
   navigateByUrl(url:string){
     this.router.navigateByUrl(url);
   }
-  
+  email: string='';
+  senha: string='';
+
+ 
+  authenticate() {
+const user = this.userService.getUserByEmailAndPassword (this.email, this.senha);
+ 
+
+}
 }
