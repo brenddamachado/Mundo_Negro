@@ -40,7 +40,7 @@ implements OnInit, OnDestroy
     }
   
     iniciarTimer(): void {
-      this.timerSubs = timer(1000).subscribe(() => {
+      this.timerSubs = timer(6000).subscribe(() => {
         this.ativarImagem(
           this.indexImagemAtiva + 1
         );
