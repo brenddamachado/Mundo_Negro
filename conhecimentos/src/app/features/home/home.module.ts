@@ -4,6 +4,7 @@ import { ProductsListComponent } from './components/products-list/products-list.
 import { HomeComponent } from './pages/home/home.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { DatailsPageComponent } from './pages/datails-page/datails-page.component';
+import { CarrosselComponent } from '../carrossel/pages/carrossel/carrossel.component';
 
 
 
@@ -11,7 +12,8 @@ import { DatailsPageComponent } from './pages/datails-page/datails-page.componen
   declarations: [
     ProductsListComponent,
     HomeComponent,
-    DatailsPageComponent
+    DatailsPageComponent,
+    CarrosselComponent
   ],
   imports: [
     CommonModule, 
