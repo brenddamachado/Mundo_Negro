@@ -22,10 +22,10 @@
                 <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
                 <label for="manterlogado">Manter-me logado</label>
             </p>
-            <p class="error" >Usuário/senha inválidos, tente novamente!</p>
+            <p class="error" *ngIf="error">Usuário/senha inválidos, tente novamente!</p>
 
             <p>
-                <input type="submit" value="Logar" />
+                <input type="submit"  (click)="authenticate()" value="Logar" />
             </p>
 
             <p class="link">
