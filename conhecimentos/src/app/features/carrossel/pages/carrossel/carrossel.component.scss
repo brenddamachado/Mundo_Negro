@@ -1,11 +1,13 @@
 .item {
     background-size: cover;
     background-repeat: no-repeat;
-    height: 700px;
+    height: 500px;
+    width:100%;
+  margin-top: 60px;
   
     transition: all 0.5s ease-in-out;
   }
-  
+
   .botoes-controle {
     display: flex;
     gap: 10px;
