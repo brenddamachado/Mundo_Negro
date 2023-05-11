@@ -6,6 +6,7 @@ import { DatailsPageComponent } from './features/home/pages/datails-page/datails
 import { CadastroComponent } from './features/cadastro/pages/cadastro/cadastro.component';
 import { CarrosselComponent } from './features/carrossel/pages/carrossel/carrossel.component';
 import { ComprasComponent } from './features/compras/pages/compras/compras.component';
+import { ProductsListComponent } from './features/home/components/products-list/products-list.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'product-datails/:livroId', component: DatailsPageComponent},
   {path: 'cadastro', component: CadastroComponent},
   {path: 'carrossel', component: CarrosselComponent},
-  {path: 'compras', component: ComprasComponent}
+  {path: 'compras', component: ComprasComponent},
+  {path: 'produtos', component: ProductsListComponent}
 ];
 
 @NgModule({
