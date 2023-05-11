@@ -1,6 +1,7 @@
+import { ComprasComponent } from './pages/compras/compras.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ComprasComponent } from './pages/compras/compras.component';
+
 
 
 
@@ -10,6 +11,9 @@ import { ComprasComponent } from './pages/compras/compras.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    ComprasComponent
   ]
 })
 export class ComprasModule { }

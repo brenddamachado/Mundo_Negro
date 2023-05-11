@@ -16,7 +16,8 @@ import { CadastroModule } from './features/cadastro/cadastro.module';
     AppRoutingModule,
     HomeModule,
     LoginModule,
-    CadastroModule
+    CadastroModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
