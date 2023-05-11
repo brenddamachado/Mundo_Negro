@@ -23,8 +23,10 @@ export class LoginComponent {
     const user =
      this.userService.getUserByEmailAndPassword(
       this.email, this.senha);
+      
       if(user) {
-        this.router.navigateByUrl('/produtos')
+        sessionStorage.setItem('user', JSON.stringify(user));
+        this.router.navigateByUrl('/produtos');
       }else{
         this.error=true;
       }
