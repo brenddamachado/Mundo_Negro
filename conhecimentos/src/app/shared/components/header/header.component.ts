@@ -8,21 +8,23 @@ import { User } from '../../models/user.model';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  constructor(private router: Router){}
+  constructor(private router: Router) { }
 
-navigateByUrl(url:string){
-  this.router.navigateByUrl(url);
-}
+  navigateByUrl(url: string) {
+    this.router.navigateByUrl(url);
+  }
 
-user?: User;
+  user?: User;
 
-ngOnInit(): void{
-  const userSessionStorage = sessionStorage.getItem('user')
-if(userSessionStorage){
-   this.user = JSON.parse(userSessionStorage)
-}
+  ngOnInit(): void {
+    const userSessionStorage = sessionStorage.getItem('user')
+    if (userSessionStorage) {
+      this.user = JSON.parse(userSessionStorage)
+    }
+  }
 
- 
-
-}
+  exit(){
+    sessionStorage.clear();
+    this.router.navigateByUrl('login');
+  }
 }

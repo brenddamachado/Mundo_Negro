@@ -7,15 +7,16 @@ import { CadastroComponent } from './features/cadastro/pages/cadastro/cadastro.c
 import { CarrosselComponent } from './features/carrossel/pages/carrossel/carrossel.component';
 import { ComprasComponent } from './features/compras/pages/compras/compras.component';
 import { ProductsListComponent } from './features/home/components/products-list/products-list.component';
+import { AuthGuardGuard } from './shared/guards/auth-guard.guard';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path:'login', component:LoginComponent},
-  {path: 'product-datails/:livroId', component: DatailsPageComponent},
+  {path: 'product-datails/:livroId', component: DatailsPageComponent, canActivate: [AuthGuardGuard]},
   {path: 'cadastro', component: CadastroComponent},
   {path: 'carrossel', component: CarrosselComponent},
   {path: 'compras', component: ComprasComponent},
-  {path: 'produtos', component: ProductsListComponent}
+  {path: 'produtos', component: ProductsListComponent, canActivate: [AuthGuardGuard]}
 ];
 
 @NgModule({
