@@ -1,14 +1,32 @@
-<app-header/>
+<app-header />
 
-<div *ngFor="let item of livros">
-  <h1>name: {{item.name}}</h1>
-  <h2> description: {{item.description}}
-  </h2>
-  <h2> {{item.valor | currency: 'R$'}}
-
-  </h2>
-  <img src="{{item.imagem}}" width="50px" height="60px">
-<button (click)="detalhesProduto (item.id) " >Detalhes</button>
+<div class="titulo1">
+  <h1>{{ titulo }}</h1>
 </div>
 
-<app-footer/>
+<div class="img_redondo">
+  <img class="redondo"
+    src="https://www3.livrariacultura.com.br/arquivos/zcard-redondo-maisvendidos-171022.png?v=638016373634000000"
+    alt="">
+  <img class="redondo"
+    src="https://www3.livrariacultura.com.br/arquivos/zcard-redondo-Pass-171022.png?v=638016373420430000" alt="">
+</div>
+
+<div class="pretos">
+
+</div>
+
+
+<div *ngFor="let item of livros">
+
+  <h1 class="titulo">name: {{item.name}}</h1>
+  <h2 class="descricao"> description: {{item.description}}
+  </h2>
+  <h2 class="preco"> {{item.valor | currency: 'R$'}}
+
+  </h2>
+  <img src="{{item.imagem}}" width="50px" height="60px" class="img">
+  <button (click)="detalhesProduto (item.id) " class="botao">Detalhes</button>
+</div>
+
+<app-footer />

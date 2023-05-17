@@ -9,6 +9,7 @@ import { livro } from '../../models/product.model';
 })
 export class ProductsListComponent {
 
+  titulo = "Explore a cultura!";
   livros: Array<livro> = this.productsService.getProducts();
 
   constructor (private productsService: ProductsService,

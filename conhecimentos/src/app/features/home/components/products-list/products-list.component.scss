@@ -1,0 +1,23 @@
+.titulo1{
+    color: #a69b03;
+    margin-top: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+
+.img_redondo{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.redondo{
+    display: block;
+    cursor: pointer;
+    
+    transform: scale(1.1);
+}
