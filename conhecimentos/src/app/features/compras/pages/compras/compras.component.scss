@@ -1,56 +1,61 @@
-
-.p1{
+.p1 {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 16px;
     font-family: "Noto Sans", sans-serif;
 }
-h2{
+
+h2 {
     max-width: 550px;
 
     font-weight: 300;
     font-family: "Roboto Slab", serif;
- 
+
     font-size: 40px;
     margin-bottom: 20px;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
 
 }
-h3{
+
+h3 {
     margin-top: 10px;
     margin-bottom: 13px;
 }
-.p2{
-font-size: 14px;
-    
+
+.p2 {
+    font-size: 14px;
+
     font-family: "Noto Sans", sans-serif;
     color: rgb(52, 58, 79);
 
     width: 90%;
 }
-.container-1{
+
+.container-1 {
     margin: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 strong {
     color: rgb(183, 77, 0);
 }
 
-.pago_container2{
+.pago_container2 {
     margin-right: 50px;
 }
 
-.livros{
+.livros {
     width: 200px;
     height: 200px;
-  
+
 }
 
-.pago_container{
-  
+.pago_container {
+
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
@@ -62,34 +67,38 @@ strong {
 }
 
 
-.info{
+.info {
     color: rgb(255, 230, 102);
- 
+
     font-size: 20px;
     line-height: 24px;
     letter-spacing: -0.01em;
-   
+
 }
-.info2{
+
+.info2 {
     color: rgb(255, 230, 102);
-  
+
     font-size: 56px;
     line-height: 56px;
     letter-spacing: -0.03em;
     font-weight: 700
 }
-p{
-    
+
+p {
+
     margin-block-end: 1em;
-   
+
 }
-.info3{
+
+.info3 {
     color: rgb(255, 255, 255);
-  
+
     line-height: 22px;
     letter-spacing: 0.01em;
-    
+
 }
+
 .info4 {
     width: 233px;
     background: rgb(255, 255, 255);
@@ -101,7 +110,7 @@ p{
 }
 
 .info8 {
-    color:#FF0000;
+    color: #FF0000;
     font-family: "Work Sans";
     font-size: 56px;
     line-height: 56px;
@@ -110,18 +119,20 @@ p{
 }
 
 .info10 {
-  
+
     padding: 8px 0px;
     background-color: rgb(0, 169, 78);
 
     color: rgb(255, 255, 255);
- 
+
     font-weight: 700;
     cursor: pointer;
 }
 
 .info11 {
-    background-color:#c57d56;
+    background-color: #c57d56;
+    width: 100%;
+   
 }
 
 
@@ -131,9 +142,9 @@ p{
     -webkit-box-flex: 1;
     flex-grow: 1;
     font-size: 16px;
-   
+
     padding: 19px 15px 20px 25px;
-  
+
 }
 
 .fPtNWM {
@@ -144,24 +155,47 @@ p{
     box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 10px 0px, rgba(72, 220, 255, 0.22) 0px 0px 40px 0px;
     font-size: 16px;
     cursor: pointer;
-  
+
     width: 122px;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
 }
-.info12, .info13{
-    display: inline-block;
 
-    vertical-align: top;
-}
-.info12{
+
+.info12 {
     margin: 20px;
     font-weight: bold;
     color: white;
- padding-top: 10px;
+    padding-top: 10px;
 }
-.info13{
+
+.info13 {
     margin-top: 10px;
 
     margin-bottom: 10px;
 }
+
+.icones-container {
+    display: flex;
+    height: 30px;
+}
+
+.icon {
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+.info11,
+.info12,
+.info13,
+.info15 {
+  display: inline-block;
+  vertical-align: top; /* Alinhar as divs no topo */
+}
+.info15{
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+
+}
+
