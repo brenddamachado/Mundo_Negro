@@ -28,3 +28,9 @@
     background: rgb(251, 97, 171);
     cursor: default;
   }
+
+  @media (max-width: 575px) {
+    .item {
+      height: 300px;
+    }
+  }

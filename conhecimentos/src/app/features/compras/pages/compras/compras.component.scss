@@ -199,3 +199,35 @@ p {
 
 }
 
+/* Responsividade até 575px */
+@media screen and (max-width: 575px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    .container-1 {
+        margin: 20px;
+    }
+
+    .info2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .info4 {
+        width: 80%;
+    }
+
+    .info8 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .fPtNWM {
+        width: 100px;
+    }
+
+    .info12 {
+        margin: 10px;
+    }
+}

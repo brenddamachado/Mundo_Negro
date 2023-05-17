@@ -150,3 +150,24 @@ input[type="submit"]:hover {
     }
   }
 }
+
+/* Media query para 575px */
+@media screen and (max-width: 575px) {
+  .content {
+    padding: 5% 10%;
+  }
+  
+  h1 {
+    font-size: 36px;
+    padding-bottom: 20px;
+  }
+  
+  input[type="submit"] {
+    font-size: 18px;
+  }
+  
+  .link {
+    font-size: 14px;
+    padding: 12px 20px 15px 20px;
+  }
+}

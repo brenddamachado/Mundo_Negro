@@ -152,3 +152,27 @@ input[type="submit"]:hover {
     }
   }
 }
+/* Responsividade até 575px */
+@media (max-width: 575px) {
+  .content {
+    width: 90%;
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h1:after {
+    margin-top: 5px;
+  }
+
+  input:not([type="checkbox"]) {
+    width: 100%;
+  }
+
+  .link {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}

@@ -24,3 +24,15 @@
   
 
 
+/* Responsividade até 575px */
+@media (max-width: 575px) {
+  .footer-container {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content p {
+    margin-top: 20px;
+  }
+}
