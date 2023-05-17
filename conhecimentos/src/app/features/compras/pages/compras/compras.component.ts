@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-compras',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./compras.component.scss']
 })
 export class ComprasComponent {
+  constructor(private router: Router){}
 
+  navigateByUrl(url:string){
+    this.router.navigateByUrl(url);
+  }
+  
 }
