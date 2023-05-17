@@ -4,7 +4,8 @@
     </div>
     <div class="nav">
         <ul>
-            <li (click)="navigateByUrl('')" *ngIf="!user">Home</li>
+            <li (click)="navigateByUrl('')" >Home</li>
+            <li (click)="navigateByUrl('produtos')" *ngIf="user">Produtos</li>
             <li (click)="navigateByUrl('login')" *ngIf="!user">Login </li>
             <li *ngIf="user" (click)="exit()">Sair</li>
         </ul>
