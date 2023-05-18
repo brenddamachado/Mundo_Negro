@@ -49,3 +49,22 @@ img {
 .descricao{
     font-size: 20px;
 }
+@media (max-width: 575px) {
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 700%;
+    }
+  
+    .informacoes {
+      width: 80%;
+    }
+  
+    .nome {
+      top: 0;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+   
+  }
+  

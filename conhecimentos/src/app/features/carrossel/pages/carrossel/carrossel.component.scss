@@ -1,3 +1,4 @@
+
 .item {
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,6 +30,7 @@
   }
 
   @media (max-width: 575px) {
+ 
     .item {
       height: 300px;
     }
