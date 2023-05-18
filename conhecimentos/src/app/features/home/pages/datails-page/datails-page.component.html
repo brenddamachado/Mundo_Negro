@@ -1,18 +1,20 @@
 <app-header />
 
-<main class="container">
-<div ng-If="product">
-  <div class="img">
-    <img src="{{product?.imagem}}" width="50px" height="60px">
 
+<div ng-If="product" class="container">
+  <div class="img1">
+    <div class="img">
+      <img src="{{product?.imagem}}" width="50px" height="60px">
+      <h2 class="preco"> {{product?.valor | currency: 'R$'}}</h2>
+    </div>
+  </div>
 
   <div class="informacoes">
-    <h1>{{product?.name}}</h1>
-    <h2 class="preco"> {{product?.valor | currency: 'R$'}}</h2>
+    <h1 class="nome">{{product?.name}}</h1>
+ 
 
-    <h2>{{product?.description}} </h2>
+    <p class="descricao">{{product?.description}} </p>
   </div>
-</div>  </div>
-</main>
+</div>
 
 <app-footer />
