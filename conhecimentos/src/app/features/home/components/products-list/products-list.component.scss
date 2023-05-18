@@ -1,6 +1,6 @@
-.titulo1{
+.titulo1 {
     color: #a69b03;
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -10,14 +10,77 @@
 }
 
 
-.img_redondo{
+.img_redondo {
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
-.redondo{
+
+.redondo {
     display: block;
     cursor: pointer;
-    
+
     transform: scale(1.1);
+}
+
+.destaque {
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom:50px;
+    color: #455363;
+    ;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cards_container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 250px;
+    height: 500px;
+}
+
+.img {
+    width:200px;
+    height: 220px;
+   
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: #d9d9d9;
+}
+.preco {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .titulo{
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  .botao{
+    margin-top: 30px;
+  }
+.add{
+    margin-top: 50px;
+    padding: 8px 0px;
+    background-color: rgb(0, 169, 78);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    cursor: pointer;
 }

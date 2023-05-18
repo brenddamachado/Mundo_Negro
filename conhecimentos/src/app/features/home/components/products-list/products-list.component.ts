@@ -8,7 +8,7 @@ import { livro } from '../../models/product.model';
   styleUrls: ['./products-list.component.scss']
 })
 export class ProductsListComponent {
-
+  datahoje = new Date();
   titulo = "Explore a cultura!";
   livros: Array<livro> = this.productsService.getProducts();
 

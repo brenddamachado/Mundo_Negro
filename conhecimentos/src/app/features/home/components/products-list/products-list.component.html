@@ -1,5 +1,8 @@
 <app-header />
 
+<div>
+  <h4> {{datahoje | date: 'medium'}}</h4>
+</div>
 <div class="titulo1">
   <h1>{{ titulo }}</h1>
 </div>
@@ -12,21 +15,51 @@
     src="https://www3.livrariacultura.com.br/arquivos/zcard-redondo-Pass-171022.png?v=638016373420430000" alt="">
 </div>
 
-<div class="pretos">
+<div class="destaque">
+  <h3>
+    Destaques do mês
+  </h3>
 
 </div>
 
+<main class="cards">
+  <div class="cards_container" *ngFor="let item of livros">
+    <div class="info">
+      <p class="titulo">{{item.name}}</p>
 
-<div *ngFor="let item of livros">
+      <img src="{{item.imagem}}" width="50px" height="60px" class="img">
 
-  <h1 class="titulo">name: {{item.name}}</h1>
-  <h2 class="descricao"> description: {{item.description}}
-  </h2>
-  <h2 class="preco"> {{item.valor | currency: 'R$'}}
 
-  </h2>
-  <img src="{{item.imagem}}" width="50px" height="60px" class="img">
-  <button (click)="detalhesProduto (item.id) " class="botao">Detalhes</button>
+
+      <h2 class="preco"> {{item.valor | currency: 'R$'}}</h2>
+
+      <button (click)="detalhesProduto (item.id) " class="botao">Detalhes</button>
+      <button class="add">Adicionar no carinho</button>
+    </div>
+  </div>
+</main>
+
+<div class="destaque">
+  <h3>
+    Discriminação e Racismo
+  </h3>
 </div>
 
+
+<main class="cards">
+  <div class="cards_container" *ngFor="let item of livros">
+    <div class="info">
+      <p class="titulo">{{item.name}}</p>
+
+      <img src="{{item.imagem}}" width="50px" height="60px" class="img">
+
+
+
+      <h2 class="preco"> {{item.valor | currency: 'R$'}}</h2>
+
+      <button (click)="detalhesProduto (item.id) " class="botao">Detalhes</button>
+      <button class="add">Adicionar no carinho</button>
+    </div>
+  </div>
+</main>
 <app-footer />
