@@ -34,7 +34,7 @@
       <h2 class="preco"> {{item.valor | currency: 'R$'}}</h2>
 
       <button (click)="detalhesProduto (item.id) " class="botao">Detalhes</button>
-      <button class="add">Adicionar no carinho</button>
+      <button (click)="recado()" class="add">Adicionar no carinho</button>
     </div>
   </div>
 </main>

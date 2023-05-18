@@ -19,4 +19,11 @@ export class ProductsListComponent {
       this.router.navigateByUrl
       (`product-datails/${idlivro}`);
     }
+
+    
+  recado(){
+    
+    alert('Adicionado no Carrinho! 🛒😍')
+  }
+
 }
