@@ -12,5 +12,7 @@ export class ComprasComponent {
   navigateByUrl(url:string){
     this.router.navigateByUrl(url);
   }
-  
+  recado(){
+    alert('Olá, Recebemos seu e-mail no nosso banco de dados. Agora você vai estar por dentro de todas as novidades, obrigada pretinha (o)!')
+  }
 }

@@ -1,8 +1,8 @@
 .data {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 1rem;
+    margin: 2rem;
 }
-
 .titulo1 {
     color: #a69b03;
     margin-top: 50px;
@@ -12,6 +12,10 @@
     font-weight: bold;
     font-style: italic;
     margin-bottom: 20px;
+}
+.titulo{
+    font-size: 20px;
+    margin: 1rem;
 }
 
 
@@ -83,11 +87,11 @@
 }
 
 .botao {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .add {
-    margin-top: 50px;
+    margin-top: 10px;
     padding: 8px 0px;
     background-color: rgb(0, 169, 78);
     color: rgb(255, 255, 255);
